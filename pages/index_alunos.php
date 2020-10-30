@@ -29,7 +29,7 @@ $listaAlunos = $Alunos->listarTodos();
         <h3>Lista de Alunos</h3>
       </div>
       <div class="col-md-1">
-        <button class="btn btn-success">Novo</button>
+        <a href="create_alunos.php" class="btn btn-success">Novo</a>
       </div>
     </div>
 
@@ -38,7 +38,7 @@ $listaAlunos = $Alunos->listarTodos();
         <tr>
           <th>Matrícula</th>
           <th>Nome</th>
-          <th>Endereço</th>
+          <th>Sexo</th>
           <th>Telefone</th>
           <th></th>
         </tr>
