@@ -1,0 +1,49 @@
+body {
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #5451e2;
+}
+
+.containerForm {
+  background-color: #fff;
+  padding: 2.5rem;
+  border-radius: 10pt;
+  margin: 5rem 0;
+}
+
+.form-group {
+  margin-bottom: 10px;
+  margin-top: 8px;
+}
+
+.last-input {
+  margin-bottom: 0;
+}
+
+.link-pass {
+  width: 100%;
+  text-align: right;
+  font-size: 12px;
+  margin-top: 5px;
+  margin-bottom: 30px;
+}
+
+.create-link {
+  color: #fff;
+}
+
+.create-link:hover {
+  color: #fff;
+  text-decoration: none;
+}
+
+.margin-btn1 {
+  margin-top: 1rem;
+}
+
+.margin-btn3 {
+  margin-top: 3rem;
+}
