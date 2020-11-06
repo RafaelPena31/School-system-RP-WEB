@@ -20,10 +20,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="dd6f99a3-3c08-4255-9e62-ce0ab9bc7fcd" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/pages/create_alunos.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pages/update_alunos.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/classes/Alunos.php" beforeDir="false" afterPath="$PROJECT_DIR$/classes/Alunos.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/create.html" beforeDir="false" afterPath="$PROJECT_DIR$/create.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pages/index_alunos.php" beforeDir="false" afterPath="$PROJECT_DIR$/pages/index_alunos.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -46,10 +45,13 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/pages" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\rafae\Documents\Project\www\Sistema_escolar\pages" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\rafae\OneDrive\Documentos\Project\www\Sistema_escolar\pages" />
     </key>
@@ -65,6 +67,7 @@
       <workItem from="1603574050278" duration="2622000" />
       <workItem from="1604059449292" duration="1019000" />
       <workItem from="1604066455246" duration="2076000" />
+      <workItem from="1604659404943" duration="2581000" />
     </task>
     <servers />
   </component>
@@ -81,6 +84,7 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
     <state x="753" y="248" key="#com.intellij.ide.util.MemberChooser" timestamp="1603574800568">
@@ -95,9 +99,9 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="794" y="463" key="NewPhpFileDialog/1920.0.1536.864/0.0.1920.1080@0.0.1920.1080" timestamp="1604066473818" />
-    <state x="623" y="235" width="672" height="678" key="search.everywhere.popup" timestamp="1604066981126">
+    <state x="623" y="235" width="672" height="678" key="search.everywhere.popup" timestamp="1604661330335">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="623" y="235" width="672" height="678" key="search.everywhere.popup/1920.0.1536.864/0.0.1920.1080@0.0.1920.1080" timestamp="1604066981126" />
+    <state x="623" y="235" width="672" height="678" key="search.everywhere.popup/1920.0.1536.864/0.0.1920.1080@0.0.1920.1080" timestamp="1604661330335" />
   </component>
 </project>

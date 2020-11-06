@@ -5,6 +5,11 @@ require_once "../classes/Alunos.php";
 
 $Alunos = new Alunos();
 $listaAlunos = $Alunos->listarTodos();
+
+if(isset($_GET["matricula"])) {
+    $Alunos->excluir($_GET["matricula"]);
+}
+
 ?>
 
 <!DOCTYPE html>
@@ -14,6 +19,7 @@ $listaAlunos = $Alunos->listarTodos();
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="../Styles/bootstrap.min.css" />
   <link rel="stylesheet" href="../Styles/global.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <style>
       body {
           background: #fff;
@@ -54,8 +60,8 @@ $listaAlunos = $Alunos->listarTodos();
               <td><?php echo $aluno->SEXO; ?></td>
               <td><?php echo $aluno->TELEFONE; ?></td>
               <td>
-                <button class="btn btn-primary"><i class="fa fa-edit"></i></button>
-                <button class="btn btn-danger"><i class="fa fa-trash"></i></button>
+                <a href="update_alunos.php?matricula=<?php echo $aluno->MATRICULA; ?>" class="btn btn-primary"><i class="fa fa-edit"></i></a>
+                <a href="index_alunos.php?matricula=<?php echo $aluno->MATRICULA; ?>" class="btn btn-danger"><i class="fa fa-trash"></i></a>
               </td>
             </tr>
         <?php endforeach; ?>

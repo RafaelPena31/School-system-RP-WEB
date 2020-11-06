@@ -4,9 +4,11 @@ header("Content-type:text/html; charset=utf8");
 require_once "../classes/Alunos.php";
 
 $Alunos = new Alunos();
+if(isset($_GET["matricula"])) {
+    $dadosAluno = $Alunos->listarID($_GET["matricula"]);
+}
 if(isset($_POST["Criar"])) {
-    $Alunos->inserir();var_dump($Alunos);
-
+    $Alunos->alterar();
 }
 ?>
 
@@ -26,7 +28,7 @@ if(isset($_POST["Criar"])) {
 </head>
 <body>
 <div class="containerForm">
-    <form action="create_alunos.php" method="post">
+    <form action="update_alunos.php?matricula=<?php echo $dadosAluno->MATRICULA; ?>" method="post">
         <h1>Adicionar aluno</h1>
         <div class="form-group">
             <label for="name">Nome:</label>
@@ -35,6 +37,7 @@ if(isset($_POST["Criar"])) {
                 class="form-control"
                 id="name"
                 name="name"
+                value="<?php echo $dadosAluno->NOME; ?>"
                 required
             />
         </div>
@@ -46,6 +49,7 @@ if(isset($_POST["Criar"])) {
                 name="sexo"
                 class="custom-control-input"
                 value="M"
+                <?php if($dadosAluno->SEXO == "M") { echo "checked"; } ?>
                 required
             />
             <label class="custom-control-label" for="customRadio1"
@@ -60,6 +64,7 @@ if(isset($_POST["Criar"])) {
                 name="sexo"
                 class="custom-control-input"
                 value="F"
+                <?php if($dadosAluno->SEXO == "F") { echo "checked"; } ?>
                 required
             />
             <label class="custom-control-label" for="customRadio2"
@@ -73,6 +78,7 @@ if(isset($_POST["Criar"])) {
                 name="sexo"
                 class="custom-control-input"
                 value="O"
+                <?php if($dadosAluno->SEXO == "O") { echo "checked"; } ?>
                 required
             />
             <label class="custom-control-label" for="customRadio3">Outros</label>
@@ -85,6 +91,7 @@ if(isset($_POST["Criar"])) {
                 class="form-control"
                 id="email"
                 name="email"
+                value="<?php echo $dadosAluno->EMAIL; ?>"
                 required
             />
         </div>
@@ -94,15 +101,22 @@ if(isset($_POST["Criar"])) {
             <textarea
                 class="form-control"
                 id="endereco"
-                placeholder="Endereço..."
                 name="endereco"
+                placeholder="<?php echo $dadosAluno->ENDERECO; ?>"
                 required
             ></textarea>
         </div>
 
         <div class="form-group">
             <label for="tel">Telefone:</label>
-            <input type="tel" class="form-control" id="tel" name="tel" required />
+            <input
+                type="tel"
+                class="form-control"
+                id="tel"
+                name="tel"
+                value="<?php echo $dadosAluno->TELEFONE; ?>"
+                required
+            />
         </div>
 
         <div class="form-group">
@@ -112,6 +126,7 @@ if(isset($_POST["Criar"])) {
                 class="form-control"
                 id="pass"
                 name="pass"
+                value="<?php echo $dadosAluno->SENHA;?>"
                 required
             />
         </div>
